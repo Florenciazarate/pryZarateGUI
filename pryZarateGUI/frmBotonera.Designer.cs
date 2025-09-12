@@ -104,6 +104,7 @@
             Controls.Add(btnSiguiente);
             Name = "frmBotonera";
             Text = "frmBotonera";
+            Load += frmBotonera_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
