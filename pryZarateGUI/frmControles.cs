@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryZarateGUI
 {
-    public partial class frmInterfazGrafica : Form
+    public partial class frmControles : Form
     {
-        public frmInterfazGrafica()
+        public frmControles()
         {
             InitializeComponent();
         }
