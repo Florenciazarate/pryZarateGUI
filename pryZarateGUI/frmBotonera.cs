@@ -39,9 +39,11 @@ namespace pryZarateGUI
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
-            if (vecNombres.Length < indice)
+            if (vecNombres.Length > 0)
+            {
                 indice--;
-            lblNombre.Text = vecNombres[indice];
+                lblNombre.Text = vecNombres[indice];
+            }
         }
 
         private void frmBotonera_Load_1(object sender, EventArgs e)
