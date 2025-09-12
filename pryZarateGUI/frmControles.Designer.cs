@@ -39,6 +39,7 @@
             btnBotonera.TabIndex = 1;
             btnBotonera.Text = "Botonera";
             btnBotonera.UseVisualStyleBackColor = true;
+            btnBotonera.Click += btnBotonera_Click;
             // 
             // frmControles
             // 

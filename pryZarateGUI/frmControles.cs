@@ -12,9 +12,17 @@ namespace pryZarateGUI
 {
     public partial class frmControles : Form
     {
+        frmBotonera Botones = new frmBotonera();
         public frmControles()
         {
             InitializeComponent();
+        }
+
+        private void btnBotonera_Click(object sender, EventArgs e)
+        {
+            Botones.Show();
+            this.Hide();
+
         }
     }
 }
