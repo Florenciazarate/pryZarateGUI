@@ -17,42 +17,64 @@ namespace pryZarateGUI
         {
             InitializeComponent();
         }
-        
+
         string[] vecNombres = new string[3];
         int indice = 0;
 
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-
-            indice++;
-
-            if (vecNombres.Length > indice)
-            {
-                lblNombre.Text = vecNombres[indice];
-            }
-            else
-            {
-                btnSiguiente.Enabled = true;
-            }
-
-        }
-
-        private void btnAnterior_Click(object sender, EventArgs e)
-        {
-            if (vecNombres.Length > 0)
-            {
-                indice--;
-                lblNombre.Text = vecNombres[indice];
-            }
-        }
-
-        private void frmBotonera_Load_1(object sender, EventArgs e)
+        private void frmBotonera_Load(object sender, EventArgs e)
         {
             vecNombres[0] = "Chofi";
             vecNombres[1] = "Camiluchi";
             vecNombres[2] = "Agu";
             lblNombre.Text = vecNombres[0];
+        }
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            indice++;
 
+            if (vecNombres.Length > indice)
+            {
+                lblNombre.Text = vecNombres[indice];
+
+                if ((indice + 1) == vecNombres.Length)
+                {
+                    btnSiguiente.Enabled = false;
+                }
+                if (indice > 0)
+                {
+                    btnAnterior.Enabled = true;
+                }
+            }
+        }
+
+
+
+        private void btnPrimero_Click(object sender, EventArgs e)
+        {
+            lblNombre.Text = vecNombres[0];
+        }
+        private void btnUltimo_Click(object sender, EventArgs e)
+        {
+            lblNombre.Text = vecNombres[vecNombres.Length - 1];
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+                if (vecNombres.Length > 0)
+                {
+                    indice--;
+                    if (indice > 0)
+                    {
+                        btnAnterior.Enabled = true;
+                        btnSiguiente.Enabled = true;
+                }
+                if (indice <= 0)
+                    {
+                    btnAnterior.Enabled = false;
+                    indice = 0;
+                }
+                    lblNombre.Text = vecNombres[indice];
+                }
+            }
         }
     }
-}
