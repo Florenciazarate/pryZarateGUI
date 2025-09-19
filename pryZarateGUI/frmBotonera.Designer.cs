@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBotonera));
             btnSiguiente = new Button();
             btnAnterior = new Button();
             txtNombre = new TextBox();
@@ -39,12 +40,12 @@
             // 
             // btnSiguiente
             // 
-            btnSiguiente.BackColor = Color.Tan;
+            btnSiguiente.BackColor = Color.DarkKhaki;
             btnSiguiente.FlatStyle = FlatStyle.Popup;
             btnSiguiente.Font = new Font("Nirmala UI", 9.75F);
             btnSiguiente.Location = new Point(237, 285);
             btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(91, 34);
+            btnSiguiente.Size = new Size(102, 34);
             btnSiguiente.TabIndex = 0;
             btnSiguiente.Text = "Siguiente >";
             btnSiguiente.UseVisualStyleBackColor = false;
@@ -52,7 +53,7 @@
             // 
             // btnAnterior
             // 
-            btnAnterior.BackColor = Color.Tan;
+            btnAnterior.BackColor = Color.DarkKhaki;
             btnAnterior.FlatStyle = FlatStyle.Popup;
             btnAnterior.Font = new Font("Nirmala UI", 9.75F);
             btnAnterior.Location = new Point(140, 285);
@@ -65,42 +66,43 @@
             // 
             // txtNombre
             // 
-            txtNombre.BackColor = Color.Coral;
+            txtNombre.BackColor = Color.BurlyWood;
+            txtNombre.Font = new Font("Nirmala UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNombre.ForeColor = SystemColors.InactiveBorder;
-            txtNombre.Location = new Point(179, 122);
+            txtNombre.Location = new Point(167, 119);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(115, 23);
+            txtNombre.Size = new Size(157, 27);
             txtNombre.TabIndex = 2;
             txtNombre.Text = "Ingrese un nombre";
             // 
             // lblIngreseNombre
             // 
             lblIngreseNombre.AutoSize = true;
-            lblIngreseNombre.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblIngreseNombre.Location = new Point(149, 84);
+            lblIngreseNombre.Font = new Font("Nirmala UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblIngreseNombre.Location = new Point(131, 70);
             lblIngreseNombre.Name = "lblIngreseNombre";
-            lblIngreseNombre.Size = new Size(179, 25);
+            lblIngreseNombre.Size = new Size(229, 32);
             lblIngreseNombre.TabIndex = 3;
             lblIngreseNombre.Text = "Ingrese su nombre";
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNombre.Location = new Point(202, 231);
+            lblNombre.Font = new Font("Nirmala UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNombre.Location = new Point(197, 231);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(68, 21);
+            lblNombre.Size = new Size(81, 25);
             lblNombre.TabIndex = 4;
             lblNombre.Text = "Nombre";
             // 
             // btnPrimero
             // 
-            btnPrimero.BackColor = Color.Tan;
+            btnPrimero.BackColor = Color.DarkKhaki;
             btnPrimero.FlatStyle = FlatStyle.Popup;
             btnPrimero.Font = new Font("Nirmala UI", 9.75F);
-            btnPrimero.Location = new Point(12, 285);
+            btnPrimero.Location = new Point(45, 285);
             btnPrimero.Name = "btnPrimero";
-            btnPrimero.Size = new Size(122, 34);
+            btnPrimero.Size = new Size(77, 34);
             btnPrimero.TabIndex = 5;
             btnPrimero.Text = "Primero";
             btnPrimero.UseVisualStyleBackColor = false;
@@ -108,12 +110,12 @@
             // 
             // btnUltimo
             // 
-            btnUltimo.BackColor = Color.Tan;
+            btnUltimo.BackColor = Color.DarkKhaki;
             btnUltimo.FlatStyle = FlatStyle.Popup;
             btnUltimo.Font = new Font("Nirmala UI", 9.75F);
-            btnUltimo.Location = new Point(334, 285);
+            btnUltimo.Location = new Point(354, 285);
             btnUltimo.Name = "btnUltimo";
-            btnUltimo.Size = new Size(122, 34);
+            btnUltimo.Size = new Size(77, 34);
             btnUltimo.TabIndex = 6;
             btnUltimo.Text = "Ultimo ";
             btnUltimo.UseVisualStyleBackColor = false;
@@ -123,8 +125,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PeachPuff;
-            ClientSize = new Size(484, 461);
+            BackColor = Color.AntiqueWhite;
+            ClientSize = new Size(484, 365);
             Controls.Add(btnUltimo);
             Controls.Add(btnPrimero);
             Controls.Add(lblNombre);
@@ -132,8 +134,9 @@
             Controls.Add(txtNombre);
             Controls.Add(btnAnterior);
             Controls.Add(btnSiguiente);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmBotonera";
-            Text = "frmBotonera";
+            Text = "Botonera";
             Load += frmBotonera_Load;
             ResumeLayout(false);
             PerformLayout();

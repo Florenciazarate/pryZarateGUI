@@ -28,26 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmControles));
             btnBotonera = new Button();
             SuspendLayout();
             // 
             // btnBotonera
             // 
-            btnBotonera.Location = new Point(190, 192);
+            btnBotonera.BackColor = Color.DarkKhaki;
+            btnBotonera.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBotonera.Location = new Point(170, 117);
             btnBotonera.Name = "btnBotonera";
-            btnBotonera.Size = new Size(75, 23);
+            btnBotonera.Size = new Size(122, 51);
             btnBotonera.TabIndex = 1;
             btnBotonera.Text = "Botonera";
-            btnBotonera.UseVisualStyleBackColor = true;
+            btnBotonera.UseVisualStyleBackColor = false;
             btnBotonera.Click += btnBotonera_Click;
             // 
             // frmControles
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(484, 461);
+            BackColor = Color.OldLace;
+            ClientSize = new Size(484, 306);
             Controls.Add(btnBotonera);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmControles";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Controles de Interfaz Grafica";
             ResumeLayout(false);
         }
