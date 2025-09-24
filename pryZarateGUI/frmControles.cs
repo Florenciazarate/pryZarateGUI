@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace pryZarateGUI
 {
-    public partial class frmInterfazGrafica : Form
+    public partial class frmControles : Form
     {
-        public frmInterfazGrafica()
+        frmBotonera Botones = new frmBotonera();
+        public frmControles()
         {
             InitializeComponent();
+        }
+
+        private void btnBotonera_Click(object sender, EventArgs e)
+        {
+            Botones.Show();
+            this.Hide();
+
         }
     }
 }
