@@ -77,11 +77,11 @@
             // lblIngreseNombre
             // 
             lblIngreseNombre.AutoSize = true;
-            lblIngreseNombre.Font = new Font("Nirmala UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblIngreseNombre.Font = new Font("Nirmala UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblIngreseNombre.ForeColor = SystemColors.ControlLightLight;
-            lblIngreseNombre.Location = new Point(136, 66);
+            lblIngreseNombre.Location = new Point(144, 71);
             lblIngreseNombre.Name = "lblIngreseNombre";
-            lblIngreseNombre.Size = new Size(229, 32);
+            lblIngreseNombre.Size = new Size(214, 32);
             lblIngreseNombre.TabIndex = 3;
             lblIngreseNombre.Text = "Ingrese su nombre";
             // 
