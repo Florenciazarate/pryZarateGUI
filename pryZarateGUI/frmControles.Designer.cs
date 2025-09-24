@@ -34,7 +34,8 @@
             // 
             // btnBotonera
             // 
-            btnBotonera.BackColor = Color.DarkKhaki;
+            btnBotonera.BackColor = Color.LightSteelBlue;
+            btnBotonera.FlatStyle = FlatStyle.System;
             btnBotonera.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBotonera.Location = new Point(170, 117);
             btnBotonera.Name = "btnBotonera";
@@ -48,9 +49,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.OldLace;
+            BackColor = Color.DarkSlateGray;
             ClientSize = new Size(484, 306);
             Controls.Add(btnBotonera);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmControles";
             StartPosition = FormStartPosition.CenterScreen;
