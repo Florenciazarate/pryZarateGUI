@@ -41,9 +41,9 @@
             // btnSiguiente
             // 
             btnSiguiente.BackColor = Color.Azure;
-            btnSiguiente.FlatStyle = FlatStyle.Popup;
-            btnSiguiente.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSiguiente.Location = new Point(233, 291);
+            btnSiguiente.FlatStyle = FlatStyle.System;
+            btnSiguiente.Font = new Font("Nirmala UI", 9.75F);
+            btnSiguiente.Location = new Point(241, 292);
             btnSiguiente.Name = "btnSiguiente";
             btnSiguiente.Size = new Size(102, 34);
             btnSiguiente.TabIndex = 0;
@@ -54,9 +54,9 @@
             // btnAnterior
             // 
             btnAnterior.BackColor = Color.Azure;
-            btnAnterior.FlatStyle = FlatStyle.Popup;
-            btnAnterior.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAnterior.Location = new Point(136, 291);
+            btnAnterior.FlatStyle = FlatStyle.System;
+            btnAnterior.Font = new Font("Nirmala UI", 9.75F);
+            btnAnterior.Location = new Point(144, 292);
             btnAnterior.Name = "btnAnterior";
             btnAnterior.Size = new Size(91, 34);
             btnAnterior.TabIndex = 1;
@@ -69,7 +69,7 @@
             txtNombre.BackColor = Color.DarkSlateGray;
             txtNombre.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNombre.ForeColor = SystemColors.InactiveBorder;
-            txtNombre.Location = new Point(163, 125);
+            txtNombre.Location = new Point(166, 115);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(157, 29);
             txtNombre.TabIndex = 2;
@@ -79,7 +79,7 @@
             lblIngreseNombre.AutoSize = true;
             lblIngreseNombre.Font = new Font("Nirmala UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblIngreseNombre.ForeColor = SystemColors.ControlLightLight;
-            lblIngreseNombre.Location = new Point(127, 76);
+            lblIngreseNombre.Location = new Point(136, 66);
             lblIngreseNombre.Name = "lblIngreseNombre";
             lblIngreseNombre.Size = new Size(229, 32);
             lblIngreseNombre.TabIndex = 3;
@@ -88,20 +88,20 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Font = new Font("Nirmala Text", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNombre.Font = new Font("Nirmala Text Semilight", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNombre.ForeColor = SystemColors.ControlLightLight;
-            lblNombre.Location = new Point(191, 247);
+            lblNombre.Location = new Point(190, 221);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(86, 25);
+            lblNombre.Size = new Size(113, 37);
             lblNombre.TabIndex = 4;
             lblNombre.Text = "Nombre";
             // 
             // btnPrimero
             // 
             btnPrimero.BackColor = Color.Azure;
-            btnPrimero.FlatStyle = FlatStyle.Popup;
-            btnPrimero.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPrimero.Location = new Point(53, 291);
+            btnPrimero.FlatStyle = FlatStyle.System;
+            btnPrimero.Font = new Font("Nirmala UI", 9.75F);
+            btnPrimero.Location = new Point(61, 292);
             btnPrimero.Name = "btnPrimero";
             btnPrimero.Size = new Size(77, 34);
             btnPrimero.TabIndex = 5;
@@ -112,9 +112,9 @@
             // btnUltimo
             // 
             btnUltimo.BackColor = Color.Azure;
-            btnUltimo.FlatStyle = FlatStyle.Popup;
+            btnUltimo.FlatStyle = FlatStyle.System;
             btnUltimo.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnUltimo.Location = new Point(341, 291);
+            btnUltimo.Location = new Point(349, 292);
             btnUltimo.Name = "btnUltimo";
             btnUltimo.Size = new Size(77, 34);
             btnUltimo.TabIndex = 6;
@@ -127,7 +127,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
-            ClientSize = new Size(484, 365);
+            ClientSize = new Size(494, 365);
             Controls.Add(btnUltimo);
             Controls.Add(btnPrimero);
             Controls.Add(lblNombre);

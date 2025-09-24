@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System;
+using System.Windows.Forms;
 
 namespace pryZarateGUI
 {
@@ -26,55 +28,51 @@ namespace pryZarateGUI
             vecNombres[0] = "Chofi";
             vecNombres[1] = "Camiluchi";
             vecNombres[2] = "Agu";
-            lblNombre.Text = vecNombres[0];
+            indice = 0;
+            lblNombre.Text = vecNombres[indice];
+            Actualizar();
         }
+
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            indice++;
-
-            if (vecNombres.Length > indice)
+            if (indice < vecNombres.Length - 1)
             {
+                indice++;
                 lblNombre.Text = vecNombres[indice];
-
-                if ((indice + 1) == vecNombres.Length)
-                {
-                    btnSiguiente.Enabled = false;
-                }
-                if (indice > 0)
-                {
-                    btnAnterior.Enabled = true;
-                }
+                Actualizar();
             }
-        }
-
-
-
-        private void btnPrimero_Click(object sender, EventArgs e)
-        {
-            lblNombre.Text = vecNombres[0];
-        }
-        private void btnUltimo_Click(object sender, EventArgs e)
-        {
-            lblNombre.Text = vecNombres[vecNombres.Length - 1];
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
-                if (vecNombres.Length > 0)
-                {
-                    indice--;
-                    if (indice > 0)
-                    {
-                        btnAnterior.Enabled = true;
-                        btnSiguiente.Enabled = true;
-                }
-                if (indice <= 0)
-                    {
-                    btnAnterior.Enabled = false;
-                    indice = 0;
-                }
-                    lblNombre.Text = vecNombres[indice];
-                }
+            if (indice > 0)
+            {
+                indice--;
+                lblNombre.Text = vecNombres[indice];
+                Actualizar();
             }
         }
+
+        private void btnPrimero_Click(object sender, EventArgs e)
+        {
+            indice = 0;
+            lblNombre.Text = vecNombres[indice];
+            Actualizar();
+        }
+
+        private void btnUltimo_Click(object sender, EventArgs e)
+        {
+            indice = vecNombres.Length - 1;
+            lblNombre.Text = vecNombres[indice];
+            Actualizar();
+        }
+
+        private void Actualizar()
+        {
+            btnPrimero.Enabled = (indice != 0);
+            btnAnterior.Enabled = (indice != 0);
+            btnUltimo.Enabled = (indice != vecNombres.Length - 1);
+            btnSiguiente.Enabled = (indice != vecNombres.Length - 1);
+        }
     }
+}
