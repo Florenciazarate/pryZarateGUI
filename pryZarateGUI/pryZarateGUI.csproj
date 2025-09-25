@@ -6,6 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>safari_animals_zoo_wildlife_kingdom_animal_vulture_icon_266148.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="safari_animals_zoo_wildlife_kingdom_animal_vulture_icon_266148.ico" />
+  </ItemGroup>
 
 </Project>
